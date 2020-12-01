@@ -82,6 +82,29 @@ d = {
 menu3(**d)
 '''
 
+def example_func(param1, param2):
+    """
+    説明はコメント内に記入すること。
+    :param param1: 
+    :param param2: 
+    :return: 
+    """
+    print(param1)
+    print(param2)
+    return True
+
+print(example_func.__doc__)
+
+def outer(a, b):
+
+    def plus(c, d):
+        return c + d
+    r1 = plus(a, b)
+    r2 = plus(b, a)
+    print(r1 + r2)
+
+outer(1, 2)
+
 
 
 
