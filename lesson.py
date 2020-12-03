@@ -53,6 +53,27 @@ print(s.lower())
 print(s.replace('Mike', 'Nancy'))
 print('##############')
 
+# import lesson_package.utils
+from lesson_package.touls import utils
+
+# from lesson_package.utils import say_twice
+
+r = utils.say_twice('hello')
+print(r)
+
+# from lesson_package.talk import human
+# from lesson_package.talk import animal
+from  lesson_package.talk import *
+
+print(animal.sing())
+print(animal.cry())
+
+print(human.sing())
+print(human.cry())
+
+
+
+
 
 
 
